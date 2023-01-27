@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mark Bagby</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Front end web developer portfolio of Mark Bagby.">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+  </head>
+
+  <body class="flex flex-col relative">
+
+    <!--Header-->
+    <header id="navbar" class="text-sm py-3">
+      <div class="container flex flex-row">
+        <a href="./" class="text-xl font-extrabold">MB</a>
+
+        <nav>
+          <div class="navList">
+            <button class="navIcon" onclick="toggleResponsiveNavDisplay()">
+              <img src="./images/menu.svg" width="28" height="28" alt="menu"/>
+            </button>
+
+            <a href="#projects" onclick="closeResponsiveNav()">Projects</a>
+            <a href="#about" onclick="closeResponsiveNav()">About</a>
+            <a href="#contact" onclick="closeResponsiveNav()">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--Background Images-->
+    <div id="backgroundImagesContainer" class="grow">
+      <div id="heroBGLayer0"></div>
+      <div id="heroBGLayer1"></div>
+      <div id="heroBGLayer2"></div>
+    </div>
+
+    <!--Hero Section-->
+    <section id="hero" class="container flex flex-row flex-wrap grow justify-between gap-12">
+      <div id="heroContent" class="bordered lg:mb-24 self-center bg-grape-700">
+        <h1>Mark Bagby</h1>
+        <h2 class="mb-0 md:mb-12">Front End Web Developer</h2>
+      </div>
+
+      <picture id="heroHeadshot" class="ml-auto">
+        <source media="(min-width:1024px)" srcset="./images/portrait_lg.webp">
+        <source media="(min-width:768px)" srcset="./images/portrait_md.webp">
+        <img class="bordered w-64 md:w-80 lg:w-96"  src="./images/portrait_sm.webp"
+             alt="Headshot of Mark">
+      </picture>
+    </section>
+
+
+    <main class="pt-28 bg-grape-700">
+      <section class="container">
+        <img src="./images/Internet-icon.webp" alt="globe with networking line" width="256"
+             class="block m-auto"/>
+
+        <h3 class="text-center">
+          The web is our portal to the digital world.
+        </h3>
+
+        <p class="m-auto">
+          The internet has assembled our collective knowledge, bridged technology, and globalized the world by
+          connecting us to one another. The web is the internet’s universal interface. That’s why the internet inspires
+          me and why I’m passionate about creating websites.
+        </p>
+      </section>
+
+
+      <!--Projects Section-->
+      <section id="projects" class="bg-grape-600">
+        <div class="container">
+          <h2>Projects</h2>
+
+          <div>
+            <h3>TwitchTok</h3>
+            <p>
+              A social media type of site that presents Twitch clips in a TikTok-like format.
+              It demonstrates the use of a 3rd party API, using Twitch’s API to browse and fetch content.
+              <br/>
+
+              <i>React | Node.js | Express | HTML | CSS | JavaScript</i>
+            </p>
+          </div>
+          <div class="text-right">
+            <h3>Forum</h3>
+            <p class="ml-auto">
+              The Forum project is a basic forum with users, posts, and comments.
+              It demonstrates full CRUD (Create, Read, Update, Delete) functionality in a web app.
+              <br/>
+
+              <i>React | Node.js | Express | MongoDB | HTML | CSS | JavaScript</i>
+            </p>
+          </div>
+
+          <div>
+            <h3>This site!</h3>
+            <p>
+              My portfolio site is created with plain HTML and JavaScript to show strong fundamentals.
+              It also demonstrates the use of a CSS framework with Tailwind CSS.
+              <br/>
+
+              <i>Tailwind CSS | HTML | CSS | JavaScript</i>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!--About Section-->
+      <section id="about" class="container">
+        <h2 class="text-center">About Me</h2>
+        <p>
+          <i>
+            I am focused on creating clean, responsive, and effective React web apps.
+          </i>
+          <br/>
+          <br/>
+          Growing up, I spent most of my time online. My love for computers and the internet naturally translated into a
+          passion for software engineering and web development. By programming during my formal education and in my
+          spare time, I learned to embrace a developer mindset. I know that any problem can be overcome through
+          persistence and a bit of trial and error.
+          <br/>
+          <br/>
+          I find modern web development exciting. My experience includes working with the MERN (MongoDB, Express, React,
+          Node) stack, Git version control, utilizing AWS for cloud deployment, and implementing an Agile development
+          process.
+          <br/>
+          <br/>
+          In my free time, I enjoy creating new projects and experimenting with new ideas and tools. I engage with my
+          creative side through software like Photoshop and Blender. When not staring at pixels, I like to get out by
+          going on road trips or hiking the many beautiful parks in Massachusetts.
+        </p>
+
+        <div class="flex flex-col items-center py-16">
+          <picture>
+            <source media="(min-width:1024px)" srcset="./images/landscape_lg.webp">
+            <source media="(min-width:768px)" srcset="./images/landscape_md.webp">
+            <img class="bordered w-[616px] md:w-[744px] lg:w-[1000px]" src="./images/landscape_sm.webp"
+                 alt="Mark with a laptop on a mountain surrounded by thoughts of code"/>
+          </picture>
+        </div>
+      </section>
+
+
+      <!--Contact Section-->
+      <section id="contact" class="bg-grape-800 pb-28">
+        <div class="container">
+          <h2 class="text-center">Contact Me or Find Me Elsewhere!</h2>
+          <div class="flex flex-row flex-grow flex-wrap justify-around gap-12">
+            <div>
+              <a href="mailto:mark@markbagby.net">
+                <img src="images/email.svg" alt="email icon" title="email" class="w-12 h-12 m-auto"/>
+                <br/>
+                <span class="text-xs">mark@markbagby.net</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="https://linkedin.com/in/mark-bagby7" target="_blank">
+                <img src="images/linkedin.webp" alt="linkedIn icon" title="linkedIn" class="w-12 m-auto"/>
+                <br/>
+                <span class="text-xs">linkedin.com/in/mark-bagby7</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="https://github.com/m-bagby" target="_blank">
+                <img src="images/github.svg" alt="github icon" title="github" class="w-12 m-auto"/>
+                <br/>
+                <span class="text-xs">github.com/m-bagby</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="frostyBlackBG flex flex-col pt-16 pb-8 text-xs text-center">
+      <div class="container flex justify-center gap-12 mb-6">
+        <a href="./">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <p class="m-auto">&#169 2023 - Mark Bagby</p>
+    </footer>
+
+
+    <script src="responsiveNav.js"></script>
+    <script src="headerScrolling.js"></script>
+    <script src="parallaxHeroImage.js"></script>
+    <script>
+      window.onscroll = function () {
+        scrollHeroImage();
+        setHeader();
+      }
+    </script>
+  </body>
+</html>
